@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Group Chat App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="chat.png" type="image/x-icon">
+</head>
+
+<body>
+	<div class="app">
+		<div class="screen join-screen active">
+			<center>
+				<img class="chatlogo" src="chat.png" alt="" height="120px" width="120px">
+			</center>
+			<div class="form">
+				<center>
+
+					<h2>Join Group Chat</h2>
+				</center>
+				<div class="form-input">
+					<label> <strong>Username</strong> </label>
+					<input type="text" id="username" autocomplete="off">
+				</div>
+				<div class="form-input">
+					<button id="join-user">Join</button>
+				</div>
+			</div>
+		</div>
+		<div class="screen chat-screen">
+			<div class="header">
+				<!-- <div class="logomate">
+
+					<img class="" src="chat.png" alt="" height="50px" width="50px">
+				</div> -->
+				<div class="logo">Group Chat</div>
+				<button id="exit-chat">Exit</button>
+			</div>
+			<div class="messages">
+			</div>
+			<div class="typebox">
+				<input type="text" id="message-input" placeholder="Type a Message">
+				<button id="send-message">Send</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="code.js"></script>
+</body>
+
+</html>
